@@ -1,0 +1,345 @@
+@font-face {
+		font-family:scriptina;
+		src:url(../sources/fonts/scriptina/SCRIPTIN.ttf);
+	}
+@font-face {
+		font-family:scriptinaalt;
+		src:url(../sources/fonts/scriptina/SCRIPALT.ttf);
+	}
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Alegreya', serif;
+font-family: 'Playfair Display', serif;
+*/
+body {
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6, {
+	margin: 0;
+}
+*,
+*:before
+*:after {
+	box-sizing: border-box;
+}
+
+.section {
+	height: 100vh;
+}
+
+.section--one {
+	background-image: url("../sources/img/bg1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.section--two {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image:linear-gradient(to right, rgba(255, 255, 255, 0.5) , rgba(196, 185, 174, 0.5)), url("../sources/img/bg2.jpg");
+}
+
+.container {
+	margin:0;
+	padding-left: 10.625%;
+	padding-right: 10.625%;
+	height: auto;
+}
+
+/*Header*/
+.header {
+	background-color: rgba(86, 83, 76, 0.53);
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10.625%;
+	padding-right: 10.625%;
+}
+
+.header:hover {
+	background-color: rgba(86, 83, 76, 0.8);
+}
+
+.logo a {
+	text-decoration: none;
+	font-family: scriptina;
+	font-size: 30px;
+	color: #fff;
+	margin-right: 105px;
+	letter-spacing: 9px;
+}
+
+.nav a, span {
+	font-family: 'Alegreya', serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	letter-spacing: 4px;
+}
+
+.nav a {
+	text-decoration: none;
+}
+
+.nav span {
+	margin:0 40px;
+}
+
+.socials {
+	
+	display: flex;
+}
+
+.socials_item {
+	flex: 1 1 0;
+	text-decoration: none;
+	color: #fff;
+	margin-left: 29px;
+}
+
+.socials i {
+	font-size: 100%;
+}
+
+/* First Page */
+
+.main_title {
+	font-family: 'Playfair Display', serif;
+	font-size: 92px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	margin: 200px auto 40px;
+	letter-spacing: 12px;
+	word-spacing: 30px;
+}
+
+.main_text {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+	margin: 105px auto 70px;
+	box-shadow: 0px 10px 15px 70px rgba(123, 111, 96, 0.3);
+	background-color: rgba(123, 111, 96, 0.3);
+	letter-spacing: 4px;
+	width: 100%;
+	max-width: 700px;
+	border-radius: 50%;
+	
+}
+
+.menu_btn {
+	display:block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Alegreya', serif;
+	font-weight: 700;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	padding: 20px 50px;
+	background-color: rgba(86,83,76, 0.53);
+	margin:0 auto;
+	max-width:150px;
+	letter-spacing: 5px;
+	word-spacing: 11px;
+}
+
+.menu_btn:hover {
+	background-color: rgba(86,83,76, 0.8);
+}
+
+/* Bread Logo */
+
+.bread_logo {
+	position: absolute;
+  	left: 50%;
+  	transform: translate(-50%, 240%);
+  	background-color: #fff;
+  	border-radius: 50%;
+  	border:17px solid #fff;
+  	background-clip: padding-box;
+}
+
+.bread_border {
+	position: absolute;
+	left: 50%;
+  	transform: translate(-50%, 165%);
+}
+
+@media only screen and (max-width: 1601px) {
+	.bread_logo {
+		transform: translate(-50%, 150%);
+	}
+	.bread_border {
+		transform: translate(-50%, 100%);
+	}
+}
+
+/* Section 2 */
+
+.p2_content {
+	display: flex;
+}
+
+.p2_content_item {
+	flex: 1 1 0;
+	width: 50%;
+	margin-top:100px;
+}
+
+/* Left Part */
+
+.content_title {
+	font-size: 48px;
+	font-weight: 700;
+	font-family: 'Alegreya', serif;
+	text-align: center;
+	color: #56534c;
+	margin:0;
+}
+
+.content_suptitle {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Alegreya', serif;
+	text-align: center;
+	color: #a47d5e;
+	letter-spacing: 2px;
+	margin:0;
+}
+
+.p2_content_text {
+	margin: 70px 70px 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+	word-spacing: 7px;
+	letter-spacing: 1px;
+	color: #56534c;
+}
+
+.chef {
+	font-size: 24px;
+	font-weight: 700;
+	font-family: 'Alegreya', serif;
+	text-align: center;
+	color: #56534c;
+	margin:0;
+}
+
+.chef_block {
+	display: flex;
+	justify-content: center;
+	margin-top:41px;
+	align-items: center;
+}
+
+.chef_name {
+	font-size: 24px;
+	font-weight: 400;
+	font-family: 'Alegreya', serif;
+	text-align: center;
+	color: #56534c;
+	margin: 0;
+	padding: 15px;
+	border-top: 1px solid #d7d5ca;
+	max-width: 111px;
+	width: 100%;
+	border-bottom: 1px solid #d7d5ca;
+	text-align: center;
+	margin: 25px;
+}
+
+.chef_img {
+	width: 100px;
+	height: 100px;
+}
+
+.chef_img img {
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+.chef_citate_block {
+	width: 470px;
+	position: relative;
+	margin: 20px auto;
+}
+
+.chef_citate {
+	color: #a47d5e;
+	font-size: 24px;
+	font-family: scriptina;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.chef_citate:before {
+	content:'“';
+	font-size: 60px;
+	font-family: 'Tinos', serif;
+	color: #56534c;
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.chef_citate:after {
+	content:'”';
+	font-size: 60px;
+	font-family: 'Tinos', serif;
+	color: #56534c;
+	opacity: 0.5;
+	position: absolute;
+	right: 0;
+}
+
+/* Right Part */
+.cake_container {
+	max-width: 630px;
+	height: 540px;
+	margin: 35px auto;
+	padding: 15px 10px 10px;
+	position: relative;
+}
+
+
+.cake_block_item {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	justify-content: center;
+	
+}
+
+.cake_block_item:last-child {
+	margin:0;
+}
+
+.cake_img {
+	width: 50%;
+	box-sizing: border-box;
+	margin:0 auto;
+}
+.cake_img img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.tastes_figure {
+	opacity: 0.95;
+	position: absolute;
+	z-index: 1000;
+	top: 50%; 
+	right: 50%;
+	transform: translate(50%,-50%);
+}
